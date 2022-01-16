@@ -21,7 +21,7 @@ export const AddUser = () => {
     const res = await axios.get("https://erto-bank-api.herokuapp.com/api/users");
     setData(res.data.users);
   };
-
+  
   const addUser = async () => {
     await axios({
       method: "post",
