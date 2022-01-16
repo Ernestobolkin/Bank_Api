@@ -18,14 +18,14 @@ export const AddUser = () => {
   };
 
   const getAllusers = async () => {
-    const res = await axios.get("http://localhost:8080/api/users");
+    const res = await axios.get("https://erto-bank-api.herokuapp.com/api/users");
     setData(res.data.users);
   };
 
   const addUser = async () => {
     await axios({
       method: "post",
-      url: "http://localhost:8080/api/users",
+      url: "https://erto-bank-api.herokuapp.com/api/users",
       data: {
         cash: +valueCash,
         credit: +value,
