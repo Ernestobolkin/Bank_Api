@@ -4,7 +4,7 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <Route path="/">
+        <Route path="https://erto-bank-api-server.herokuapp.com/">
           <AddUser />
         </Route>
       </BrowserRouter>
