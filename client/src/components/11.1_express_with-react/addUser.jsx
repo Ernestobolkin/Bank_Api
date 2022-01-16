@@ -18,21 +18,21 @@ export const AddUser = () => {
   };
 
   const getAllusers = async () => {
-    const res = await axios.get("/api/users");
+    const res = await axios.get("http://localhost:8080/api/users");
     setData(res.data.users);
   };
 
   const addUser = async () => {
     await axios({
       method: "post",
-      url: "/api/users",
+      url: "http://localhost:8080/api/users",
       data: {
         cash: +valueCash,
         credit: +value,
       },
     });
     getAllusers();
-    console.log("awe");
+    
   };
 
   useEffect(() => {

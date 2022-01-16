@@ -4,6 +4,7 @@ const { parserClients, addClient, updateClient } = require("../utils/utils");
 const path = "./json/data.json";
 
 const getUser = (req, res) => {
+  console.log('works');
   const usersData = parserClients(path);
   const { id } = req.params;
   try {
